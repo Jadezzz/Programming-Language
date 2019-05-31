@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/robin/Documents/Programming-Language/PL_Bonus/CMake/ext/fmt/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/robin/Documents/Programming-Language/PL_Bonus/CMake/build/ext/fmt/CMakeFiles/generate.stamp is up-to-date.
+  format.cc
+  posix.cc
+  正在產生程式碼...
+  fmt.vcxproj -> C:\Users\robin\Documents\Programming-Language\PL_Bonus\CMake\build\ext\fmt\Debug\fmtd.lib

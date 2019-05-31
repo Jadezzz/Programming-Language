@@ -1,2 +1,6 @@
 *.zip
 .vscode/
+/PL_Bonus/CMake/build/.vs/NANATest/v15
+/PL_Bonus/CMake/build/Debug
+/PL_Bonus/CMake/build/x64/Debug
+/PL_Bonus/CMake/build/NANATest.dir/Debug
