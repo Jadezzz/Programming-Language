@@ -5,6 +5,7 @@
 #include <nana/gui/widgets/textbox.hpp>
 #include <fmt/format.h>
 
+#include "square.h"
 int main()
 {
     using namespace nana;
@@ -20,20 +21,20 @@ int main()
         auto val = atoi(text.caption().c_str());
         
         auto msg = msgbox(fm, u8"計算結果");
-        (msg<<fmt::format("{0}*{0}={1}", val, val*val)).show();
+		(msg << fmt::format("{0}*{0}={1}", val, square(val))).show();
 
     });
 
     fm.events().unload([&fm] {
         
         auto msg = msgbox(fm, u8"重要問題?", msgbox::yes_no);
-        msg<<u8"胡老師美嗎?";
+        msg<<u8"助教男的帥女的美?";
         do {
             if(msg.show()==msgbox::pick_yes)
                 break;
             auto msg2 = msgbox(fm, u8"訊息");
             msg2.icon(msgbox::icon_information);
-            (msg2<<u8"當學生要誠實").show();
+            (msg2<<u8"對自己要有信心!").show();
         } while(true);
     
     });
